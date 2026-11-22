@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Successor: care that outlives the carer</title>
+  <meta name="description" content="A carryable robot that learns how an aging parent cares for their autistic adult child, helps every day, and teaches anyone who steps in.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22%3E%3Crect x=%227%22 y=%226%22 width=%2210%22 height=%2216%22 rx=%224%22 fill=%22%23F3B33D%22/%3E%3C/svg%3E">
+</head>
+<body>
+  <a class="skip" href="#scenarios">Skip to the scenarios</a>
+
+  <header class="hero">
+    <div class="hero-scene" aria-hidden="true">
+      <svg id="heroSvg" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMax slice">
+        <defs>
+          <radialGradient id="heroGlow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#F3B33D" stop-opacity="0.55"/>
+            <stop offset="100%" stop-color="#F3B33D" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <rect width="1200" height="700" fill="#22304A"/>
+        <rect x="690" y="120" width="360" height="330" rx="8" fill="#141C2F" stroke="#33415F" stroke-width="6"/>
+        <line x1="870" y1="120" x2="870" y2="450" stroke="#33415F" stroke-width="6"/>
+        <line x1="690" y1="285" x2="1050" y2="285" stroke="#33415F" stroke-width="6"/>
+        <circle cx="980" cy="200" r="26" fill="#FFE7AE" opacity="0.85"/>
+        <circle cx="760" cy="170" r="2" fill="#FFE7AE"/><circle cx="820" cy="230" r="2" fill="#FFE7AE"/><circle cx="930" cy="340" r="2" fill="#FFE7AE"/><circle cx="1010" cy="400" r="2" fill="#FFE7AE"/>
+        <rect x="0" y="560" width="1200" height="140" fill="#2B3957"/>
+        <rect x="0" y="560" width="1200" height="10" fill="#384A6E"/>
+        <circle class="hero-glow" cx="880" cy="470" r="260" fill="url(#heroGlow)"/>
+        <g transform="translate(880 560) scale(1.05) translate(-220 -498)">
+          <path d="M188 235 Q220 150 252 235" fill="none" stroke="#5F5E5A" stroke-width="7" stroke-linecap="round"/>
+          <rect x="150" y="476" width="140" height="22" rx="8" fill="#D3D1C7"/>
+          <rect x="165" y="230" width="110" height="246" rx="40" fill="#F1EFE8"/>
+          <rect x="165" y="245" width="110" height="52" rx="22" fill="#FAEEDA" stroke="#BA7517" stroke-width="1.5"/>
+          <circle cx="220" cy="271" r="13" fill="#444441"/>
+          <path d="M207 271 A13 13 0 0 1 233 271 Z" fill="#BA7517"/>
+          <rect x="180" y="385" width="80" height="44" rx="10" fill="#F3B33D"/>
+        </g>
+      </svg>
+    </div>
+    <div class="hero-text">
+      <p class="kicker">The Successor</p>
+      <h1>Care that outlives the carer.</h1>
+      <p class="lede">A carryable robot that learns how an aging parent cares for their autistic adult child, helps them every day, and teaches anyone who steps in to care in the parent's way.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="#family">Meet the family</a>
+        <button class="button ghost" type="button" data-open-panel>See the lantern</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="family" class="story-section">
+      <div class="wrap">
+        <h2>Five people, one lantern</h2>
+        <p class="section-lede">The characters are illustrative, built from what parents and caregivers describe.</p>
+        <ul class="people" id="people"></ul>
+      </div>
+    </section>
+
+    <section id="problem" class="story-section problem">
+      <div class="wrap narrow">
+        <h2>What happens at 21</h2>
+        <p class="prose">When an autistic young adult with high support needs finishes school, the services that structured their days end. Their parents, often in their late 50s or 60s, take over: teacher, therapist, scheduler and, very often, remote control. Everything about how to care for their child lives in one person's head. It is rarely written down and never rehearsed by anyone else.</p>
+        <dl class="facts">
+          <div><dt>5.5 million</dt><dd>adults with intellectual and developmental disabilities live with family in the US. 1.3 million rely on a carer over 60.</dd></div>
+          <div><dt>38%</dt><dd>of people receiving care have no care plan.</dd></div>
+          <div><dt>64%</dt><dd>of live-in carers have no unpaid help at all.</dd></div>
+          <div><dt>39% vs 13%</dt><dd>of carers want a break, compared with those who actually take one.</dd></div>
+        </dl>
+        <p class="prose">Residential places are often allocated by crisis: a carer's hospitalisation or death, rather than planning. When the parent is suddenly unavailable, their child loses their routines, their calm and their sense of safety at the same moment.</p>
+        <p class="source">Sources: AARP and National Alliance for Caregiving, <i>Caregiving in the US 2025</i>; The State of the States in Intellectual and Developmental Disabilities; Milbank Memorial Fund.</p>
+      </div>
+    </section>
+
+    <section id="lantern" class="product">
+      <div class="wrap product-grid">
+        <div>
+          <h2>Meet the lantern</h2>
+          <p class="section-lede">About 30 cm tall and under 2 kg, with a matte, warm shell. It has no face and no screen. Choose a view, then select any marked part to see what it does.</p>
+          <ul class="principles">
+            <li>Records only when the parent opens the lid</li>
+            <li>The adult child decides what is kept about them</li>
+            <li>Stored on the device, with no subscription</li>
+            <li>Belongs to the adult child and moves with them</li>
+          </ul>
+        </div>
+        <div class="viewer" data-viewer="inline"></div>
+      </div>
+    </section>
+
+    <section id="scenarios" class="scenarios">
+      <div class="wrap">
+        <h2>Seven moments with the lantern</h2>
+        <p class="section-lede">Pick a moment and step through it. Watch the lantern's light, the projected step and who is doing what.</p>
+        <div class="explorer">
+          <nav class="scenario-list" aria-label="Scenarios"><ol id="scenarioList"></ol></nav>
+          <div class="stage-wrap" id="stage" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="arc" class="story-section arc-section">
+      <div class="wrap">
+        <h2>The story in six beats</h2>
+        <p class="section-lede">How the pitch unfolds, from the day school ends to the day Alex carries the lantern into his new home.</p>
+        <div class="arc" id="arc-chart"></div>
+        <div class="arc-detail" id="arc-detail" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section id="safeguards" class="product safeguards">
+      <div class="wrap">
+        <h2>Built to support people, never replace them</h2>
+        <div class="safe-grid">
+          <div><h3>Consent</h3><p>The adult child can listen to, keep or remove any clip about them. Live calls are off unless the family turns them on.</p></div>
+          <div><h3>Safety</h3><p>The parent marks every routine as "can run alone" or "needs a person". Bathing, and anything with a fall or scald risk, always needs a person present.</p></div>
+          <div><h3>Privacy</h3><p>No always-on camera, no face, no cloud subscription. The lantern learns from taps and what the parent chooses to record.</p></div>
+          <div><h3>Ownership</h3><p>The lantern belongs to the adult child. When they move, it moves with them, and so does the care.</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p>The Successor is an entry to the Stanford Center on Longevity Design Challenge, 2026–27. Characters and scenes are illustrative.</p>
+    </div>
+  </footer>
+
+  <button class="panel-toggle" type="button" data-open-panel aria-controls="panel" aria-expanded="false">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6 Q12 1 15 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><rect x="7.5" y="6" width="9" height="15" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="9.5" y="13" width="5" height="3" rx="1" fill="currentColor"/></svg>
+    <span>The lantern</span>
+  </button>
+
+  <aside class="panel" id="panel" aria-label="The lantern and its features" hidden>
+    <div class="panel-head">
+      <h2>The lantern</h2>
+      <button class="panel-close" type="button" data-close-panel>Close</button>
+    </div>
+    <div class="viewer" data-viewer="panel"></div>
+  </aside>
+
+  <script src="js/data.js"></script>
+  <script src="js/lantern.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
